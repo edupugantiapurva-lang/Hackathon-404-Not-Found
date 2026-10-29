@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NutriBite | Eat Well, Live Well</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fbf5;
+  color: #243c2c;
+  line-height: 1.6;
+}
+header {
+  display: flex; justify-content: space-between;
+  align-items: center; padding: 20px 8%;
+  background: white; flex-wrap: wrap; gap: 12px;
+}
+.logo { font-size: 25px; font-weight: bold; color: #27834b; }
+nav a {
+  text-decoration: none; color: #294a34;
+  margin-left: 20px; font-weight: 600;
+}
+nav a:hover { color: #35a45c; }
+.hero {
+  padding: 80px 8%; display: flex;
+  align-items: center; justify-content: space-between;
+  gap: 35px; flex-wrap: wrap;
+  background: linear-gradient(120deg,#e6f6df,#fff5dc);
+}
+.hero-text { flex: 1; min-width: 260px; }
+.hero h1 { font-size: clamp(38px,5vw,60px); line-height: 1.12; }
+.hero h1 span { color: #27834b; }
+.hero p { margin: 22px 0; font-size: 18px; color: #536657; }
+.hero img {
+  width: 100%; max-width: 430px;
+  border-radius: 24px; object-fit: cover;
+}
+.btn {
+  display: inline-block; background: #27834b;
+  color: white; padding: 13px 24px;
+  border-radius: 30px; text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover { background: #196637; }
+section { padding: 65px 8%; }
+.section-title { text-align: center; margin-bottom: 35px; }
+.section-title h2 { font-size: 32px; }
+.section-title p { color: #68796b; margin-top: 8px; }
+.cards {
+  display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 24px;
+}
+.card {
+  background: white; padding: 25px; border-radius: 18px;
+  box-shadow: 0 5px 22px #23451a0c;
+  transition: transform .2s;
+}
+.card:hover { transform: translateY(-5px); }
+.card .emoji { font-size: 42px; }
+.card h3 { margin: 12px 0 8px; }
+.card p { color: #657366; }
+.meals { background: #edf6e9; }
+.meal-card { padding: 0; overflow: hidden; }
+.meal-card img { width: 100%; height: 190px; object-fit: cover; }
+.meal-info { padding: 20px; }
+.tag {
+  display: inline-block; background: #e1f3dc;
+  color: #267744; padding: 4px 10px;
+  border-radius: 20px; font-size: 12px;
+}
+.tips { background: white; }
+.tip {
+  display: flex; gap: 15px; margin-bottom: 22px;
+  align-items: flex-start;
+}
+.tip span { font-size: 28px; }
+.cta {
+  margin: 30px 8%; padding: 40px 25px;
+  background: #27834b; color: white;
+  border-radius: 22px; text-align: center;
+}
+.cta p { margin: 12px 0 22px; }
+.cta .btn { background: white; color: #27834b; }
+footer {
+  text-align: center; padding: 25px;
+  background: #203c2a; color: white;
+}
+@media(max-width:600px) {
+  header { justify-content: center; }
+  nav a { margin: 0 7px; font-size: 14px; }
+  .hero { padding: 50px 7%; }
+  section { padding: 45px 7%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🥑 NutriBite</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#meals">Meals</a>
+    <a href="#tips">Tips</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p>YOUR GUIDE TO HEALTHY EATING</p>
+    <h1>Eat Well.<br><span>Feel Great.</span></h1>
+    <p>Discover delicious foods, build balanced meals,
+       and learn simple habits that help you feel your best.</p>
+    <a href="#meals" class="btn">Explore Meal Ideas →</a>
+  </div>
+  <img
+    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85"
+    alt="Colorful bowl of vegetables and healthy foods">
+</section>
+
+<section id="benefits">
+  <div class="section-title">
+    <h2>Why Eat a Balanced Diet?</h2>
+    <p>Healthy eating is about variety, nourishment and enjoyment.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="emoji">⚡</div>
+      <h3>Everyday Energy</h3>
+      <p>Carbohydrates provide energy for learning, playing and daily activities.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">💪</div>
+      <h3>Growth & Strength</h3>
+      <p>Protein, calcium and other nutrients support growing bodies.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🧠</div>
+      <h3>Brain Power</h3>
+      <p>A variety of nourishing foods helps support concentration and brain health.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🌈</div>
+      <h3>Food Variety</h3>
+      <p>Different fruits, vegetables, grains and proteins offer different nutrients.</p>
+    </article>
+  </div>
+</section>
+
+<section class="meals" id="meals">
+  <div class="section-title">
+    <h2>Build Your Balanced Plate 🍽️</h2>
+    <p>Mix different food groups to make satisfying meals.</p>
+  </div>
+  <div class="cards">
+    <article class="card meal-card">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80" alt="Fresh vegetables and salad">
+      <div class="meal-info">
+        <span class="tag">FRUITS & VEGGIES</span>
+        <h3>Colorful Produce</h3>
+        <p>Try carrots, spinach, tomatoes, bananas, apples and seasonal fruits.</p>
+      </div>
+    </article>
+    <article class="card meal-card">
+      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Balanced grain and vegetable bowl">
+      <div class="meal-info">
+        <span class="tag">GRAINS</span>
+        <h3>Energy Foods</h3>
+        <p>Enjoy rice, roti, oats, whole-wheat bread or other grains.</p>
+      </div>
+    </article>
+    <article class="card meal-card">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80" alt="A bowl with fresh plant foods">
+      <div class="meal-info">
+        <span class="tag">PROTEIN</span>
+        <h3>Growing Strong</h3>
+        <p>Include dal, beans, paneer, eggs, fish, chicken or nuts as suitable.</p>
+      </div>
+    </article>
+  </div>
+  <p style="text-align:center;margin-top:25px">
+    <strong>Remember:</strong> No single food makes a diet healthy.
+    Variety and balance matter!
+  </p>
+</section>
+
+<section class="tips" id="tips">
+  <div class="section-title">
+    <h2>Simple Healthy Habits 🌱</h2>
+    <p>Small everyday choices can make a difference.</p>
+  </div>
+  <div style="max-width:700px;margin:auto">
+    <div class="tip"><span>💧</span><div><h3>Drink Water</h3><p>Keep water nearby and drink regularly throughout the day.</p></div></div>
+    <div class="tip"><span>🥗</span><div><h3>Eat Different Foods</h3><p>Try different food groups and colors across your meals.</p></div></div>
+    <div class="tip"><span>🍳</span><div><h3>Don't Skip Meals</h3><p>Eat regular, satisfying meals and snacks when you are hungry.</p></div></div>
+    <div class="tip"><span>😴</span><div><h3>Sleep Well</h3><p>Good sleep supports learning, growth and overall well-being.</p></div></div>
+    <div class="tip"><span>😊</span><div><h3>Enjoy Your Food</h3><p>All kinds of foods can fit into a balanced lifestyle.</p></div></div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Healthy Eating Starts With One Step!</h2>
+  <p>Explore new foods, try simple recipes and make mealtimes enjoyable.</p>
+  <a href="#home" class="btn">Back to Top ↑</a>
+</div>
+</main>
+
+<footer>
+  <p>🥑 NutriBite — Eat Well, Live Well</p>
+  <p>Made to inspire healthier everyday choices.</p>
+</footer>
+
+</body>
+</html>
